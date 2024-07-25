@@ -1,0 +1,27 @@
+# :::::::::::::::::::::::::::::::::[        Calculator          ]:::::::::::::::::::::::::::::::::: #
+ao = input("Select a operation(A,S,M,D): ")
+first_digit = float(input("Enter 1st digit: "))
+second_digit = float(input("Enter 2nd digit: "))
+
+if ao == "M" or ao == "m":
+    def multiply(number1, number2):
+        return number1 * number2
+    result = float(multiply(first_digit, second_digit))
+    print("Answer: "+str(result))
+elif ao == "D" or ao == "d":
+    def division(number1, number2):
+        return number1 / number2
+    result = float(division(first_digit, second_digit))
+    print("Answer: "+str(result))
+elif ao == "A" or ao == "a":
+    def addition(number1, number2):
+        return number1 + number2
+    result = float(addition(first_digit, second_digit))
+    print("Answer: "+str(result))
+elif ao == "S" or ao == "s":
+    def subtract(number1, number2):
+        return number1 - number2
+    result = float(subtract(first_digit, second_digit))
+    print("Answer: "+str(result))
+else:
+    print("Please choose the right operation to perform: ")
