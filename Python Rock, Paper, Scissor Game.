@@ -1,0 +1,48 @@
+import random
+
+print("Welcome to the game of Rock, Paper, Scissor")
+while True:
+
+    choice = ["Rock", "Paper", "Scissor"]
+    computer = random.choice(choice)
+    player = None
+
+    while player not in choice:
+        player = input("Rock, Paper or Scissor?: ").capitalize()
+
+    if computer == player:
+        print("Computer: ", computer)
+        print("Player: ", player)
+        print("It's a Tie!")
+    elif player == "Rock":
+        if computer == "Paper":
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("You Lose!")
+        elif computer == "Scissor":
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("You Win!")
+    elif player == "Paper":
+        if computer == "Scissor":
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("You Lose!")
+        elif computer == "Rock":
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("You Win!")
+    elif player == "Scissor":
+        if computer == "Rock":
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("You Lose!")
+        elif computer == "Paper":
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("You Win!")
+    play_again = input("Do you want to play again?(y/n): ")
+
+    if play_again != "y":
+        break
+print("Ok then, Bye!")
