@@ -1,0 +1,41 @@
+int main(){
+
+  printf("\n-----------------------------------------------\n");
+    char operator;
+    double dig1;
+    double dig2;
+    double dig3;
+
+    printf("\nEnter the operation to use(A,S,M or D): ");
+    scanf("%c", &operator);
+    operator = toupper(operator);
+    printf("\nEnter the first number: ");
+    scanf("%lf", &dig1);
+    printf("\nEnter the scecond number: ");
+    scanf("%lf", &dig2);
+
+
+    switch (operator)
+    {
+    case 'A':
+        dig3 = dig1 + dig2;
+        printf("\nThe Addition is: %0.5lf", dig3);
+        break;
+    case 'S':
+        dig3 = dig1 - dig2;
+        printf("\nThe Substraction is: %0.5lf", dig3);
+        break;
+    case 'M':
+        dig3 = dig1 * dig2;
+        printf("\nThe Multiplication is: %0.5lf", dig3);
+        break;
+    case 'D':
+        dig3 = dig1 / dig2;
+        printf("\nThe Division is: %0.5lf", dig3);
+        break;
+    default:
+        printf("\nEnter a valid operation!");
+        break;
+    }
+  return 0;
+}
