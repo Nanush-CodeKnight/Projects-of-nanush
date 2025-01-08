@@ -6,10 +6,10 @@ int main(){
     float otemp;
 
     printf("\nEnter which scale you want to use (C or F): ");
-    //scanf("%c", &type);
+    scanf("%c", &type);
     type = toupper(type);
     printf("\nEnter Temperature: ");
-    //scanf("%f", &itemp);
+    scanf("%f", &itemp);
 
     if (type == 'C')
     {
